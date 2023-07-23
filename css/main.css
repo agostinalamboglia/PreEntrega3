@@ -65,7 +65,12 @@ footer {
   .home h2 {
     font-size: 27px;
     text-align: center; }
-  .home .contentMainHome .parrafoIndex {
+  .home .contentMainHome .parrafoIndex1 {
+    margin: 15px;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px; }
+  .home .contentMainHome .parrafoIndex2 {
     margin: 15px;
     font-size: 18px;
     text-align: center;
