@@ -1,0 +1,28 @@
+@import "../utilidades/variables";
+@import "../utilidades/extend";
+
+.mainContact{
+    font-family: 'Comfortaa', cursive, bold;
+    color: $color-texto;
+    .contacth1{
+        @extend %tituloh1;
+        text-align: center
+    }
+    .contacth2{
+        @extend %tituloh2;
+    }
+    .contenedorContactos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .medioContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        
+    }
+}
+

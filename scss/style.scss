@@ -1,0 +1,60 @@
+@import "utilidades/variables";
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+html{
+    background-color: $color-backgroundbody;
+}
+header{
+    padding: 1px;
+    height: 100px;
+    background-color: $color-headerfooter;
+    font-family: 'Comfortaa', cursive;
+    font-size: 7px;
+    .navbar{
+        background-color: $color-headerfooter;
+    }
+    .navbar .container-fluid img{
+        border: 4.5px double $color-bordes;
+    }
+    li .color-link{
+        color: $color-link;
+        font-size: 18px;
+        text-align: center;
+    }
+    li .nav-link{
+        color: $color-backgroundbody;
+    }
+}
+main{
+    background-color: $color-backgroundbody;
+}
+footer{
+    background-color: $color-headerfooter;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    height: 15px;
+    position: fixed; bottom: 0px ; width: 100%;
+}
+
+/*estilos de home*/
+@import "htmls/home";
+
+/*estilos de about me*/
+@import "htmls/about";
+
+/*estilos de projects*/
+@import "htmls/projects";
+
+/*estilos de resume*/
+@import "htmls/resume";
+
+/*estilos de contact*/
+@import "htmls/contact";

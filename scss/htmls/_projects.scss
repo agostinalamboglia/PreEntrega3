@@ -1,0 +1,25 @@
+@import "../utilidades/variables";
+@import "../utilidades/extend";
+
+.mainProjects{
+    font-family: 'Comfortaa', cursive, bold;
+    color: $color-texto;
+    margin-bottom: 15%;
+    div .projectsh1{
+        @extend %tituloh1;
+    }
+    .grillaProjects{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorImgProject .imgProjects{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contenedorImgProject{
+        margin: 5%;
+        border: 2px solid $color-bordes;
+    }
+}

@@ -1,0 +1,32 @@
+@import "../utilidades/variables";
+@import "../utilidades/extend";
+
+
+.home{
+    font-family: 'Comfortaa', cursive, bold;
+    color: $color-texto;
+    h1{
+        @extend %tituloh1;
+        text-align: center;
+    }
+    h2{
+        @extend %tituloh2;
+        font-size: 27px;
+        text-align: center;
+    }
+    .contentMainHome .parrafoIndex{
+        margin: 15px;
+        font-size: 18px;
+        text-align: center;
+        padding: 30px;
+    }
+    .contentMainHome .imgHome{
+        margin-bottom: 50px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10%;
+    }
+}
+

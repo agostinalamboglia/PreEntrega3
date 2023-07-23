@@ -1,0 +1,17 @@
+@import "../utilidades/variables";
+
+.mainResume{
+    font-family: 'Comfortaa', cursive, bold;
+    color: $color-texto;
+    .resumeh1{
+        @extend %tituloh1;
+    }
+    .resumeh2{
+        @extend %tituloh2;
+        text-align: left;
+        font-size: 25px;
+    }
+    .sectionResume{
+        margin: 10px 20px 30px 15px; 
+    }
+}

@@ -1,0 +1,178 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos generales*/
+html {
+  background-color: #FFF2E0; }
+
+header {
+  padding: 1px;
+  height: 100px;
+  background-color: #77885b;
+  font-family: 'Comfortaa', cursive;
+  font-size: 7px; }
+  header .navbar {
+    background-color: #77885b; }
+  header .navbar .container-fluid img {
+    border: 4.5px double #667474; }
+  header li .color-link {
+    color: #151513;
+    font-size: 18px;
+    text-align: center; }
+  header li .nav-link {
+    color: #FFF2E0; }
+
+main {
+  background-color: #FFF2E0; }
+
+footer {
+  background-color: #77885b;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+  height: 15px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%; }
+
+/*estilos de home*/
+.home h1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
+
+.home h2, .mainResume .resumeh2, .mainContact .contacth2 {
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold; }
+
+.mainAbout .aboutP {
+  margin: 15px;
+  font-size: 18px;
+  padding: 25px;
+  gap: 5px; }
+
+.home {
+  font-family: 'Comfortaa', cursive, bold;
+  color: #2e3031; }
+  .home h1 {
+    text-align: center; }
+  .home h2 {
+    font-size: 27px;
+    text-align: center; }
+  .home .contentMainHome .parrafoIndex {
+    margin: 15px;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px; }
+  .home .contentMainHome .imgHome {
+    margin-bottom: 50px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10%; }
+
+/*estilos de about me*/
+.home h1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
+
+.home h2, .mainResume .resumeh2, .mainContact .contacth2 {
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold; }
+
+.mainAbout .aboutP {
+  margin: 15px;
+  font-size: 18px;
+  padding: 25px;
+  gap: 5px; }
+
+.mainAbout {
+  font-family: 'Comfortaa', cursive, bold;
+  color: #2e3031; }
+
+/*estilos de projects*/
+.home h1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
+
+.home h2, .mainResume .resumeh2, .mainContact .contacth2 {
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold; }
+
+.mainAbout .aboutP {
+  margin: 15px;
+  font-size: 18px;
+  padding: 25px;
+  gap: 5px; }
+
+.mainProjects {
+  font-family: 'Comfortaa', cursive, bold;
+  color: #2e3031;
+  margin-bottom: 15%; }
+  .mainProjects .grillaProjects {
+    display: flex;
+    flex-direction: column; }
+  .mainProjects .contenedorImgProject .imgProjects {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .mainProjects .contenedorImgProject {
+    margin: 5%;
+    border: 2px solid #667474; }
+
+/*estilos de resume*/
+.mainResume {
+  font-family: 'Comfortaa', cursive, bold;
+  color: #2e3031; }
+  .mainResume .resumeh2 {
+    text-align: left;
+    font-size: 25px; }
+  .mainResume .sectionResume {
+    margin: 10px 20px 30px 15px; }
+
+/*estilos de contact*/
+.home h1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
+
+.home h2, .mainResume .resumeh2, .mainContact .contacth2 {
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold; }
+
+.mainAbout .aboutP {
+  margin: 15px;
+  font-size: 18px;
+  padding: 25px;
+  gap: 5px; }
+
+.mainContact {
+  font-family: 'Comfortaa', cursive, bold;
+  color: #2e3031; }
+  .mainContact .contacth1 {
+    text-align: center; }
+  .mainContact .contenedorContactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+  .mainContact .medioContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }

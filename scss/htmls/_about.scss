@@ -1,0 +1,15 @@
+@import "../utilidades/variables";
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+
+.mainAbout{
+    font-family: 'Comfortaa', cursive, bold;
+    color: $color-texto;
+    .abouth1{
+        @extend %tituloh1;
+    }
+    .aboutP{
+        @extend %parrafo-mobile;
+    }
+
+}
