@@ -83,6 +83,27 @@ footer {
     align-items: flex-start;
     padding: 10%; }
 
+/*MQ de tablet*/
+/*MQ de desktop*/
+@media screen and (min-width: 1024px) {
+  .home {
+    background-color: pink; }
+    .home .contentMainHome {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "parrafo-uno" "imgHome" "parrafo-dos" "parrafo-dos";
+      gap: 5px; }
+    .home .parrafoIndex1 {
+      background-color: yellow;
+      grid-area: parrafo-uno; }
+    .home .imgHome {
+      background-color: skyblue;
+      grid-area: imgHome; }
+    .home .parrafoIndex2 {
+      background-color: violet;
+      grid-area: parrafo-dos; } }
+
 /*estilos de about me*/
 .home h1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   padding: 20px;
@@ -104,6 +125,15 @@ footer {
 .mainAbout {
   font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
+
+/*MQ de tablet*/
+/*MQ de desktop*/
+@media screen and (min-width: 1024px) {
+  .mainAbout div .aboutP {
+    margin: 15px;
+    font-size: 20px;
+    padding: 25px;
+    gap: 5px; } }
 
 /*estilos de projects*/
 .home h1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
@@ -148,6 +178,12 @@ footer {
   .mainResume .sectionResume {
     margin: 10px 20px 30px 15px; }
 
+/*MQ de tablet*/
+/*MQ de desktop*/
+@media screen and (min-width: 1024px) {
+  .mainResume div ul li {
+    font-size: 18px; } }
+
 /*estilos de contact*/
 .home h1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   padding: 20px;
@@ -181,3 +217,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-items: center; }
+
+/*MQ de tablet*/
+/*MQ de desktop*/
+@media screen and (min-width: 1024px) {
+  .contenedorContactos .medioContacto {
+    display: flex; } }

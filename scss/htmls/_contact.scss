@@ -22,7 +22,18 @@
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        
     }
 }
 
+/*MQ de tablet*/
+
+/*MQ de desktop*/
+@media screen and (min-width: 1024px){
+    .contenedorContactos{
+    
+        .medioContacto{
+            display: flex;
+            
+        }
+    }
+}

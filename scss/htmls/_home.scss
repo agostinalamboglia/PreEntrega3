@@ -36,4 +36,33 @@
     }
 }
 
+/*MQ de tablet*/
 
+/*MQ de desktop*/
+@media screen and (min-width: 1024px){
+    .home{
+        background-color: pink;
+        .contentMainHome{
+            display: grid;
+            grid-template-columns: 2fr 1fr ;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "parrafo-uno" "imgHome"
+            "parrafo-dos" "parrafo-dos";
+            gap: 5px;
+        }
+        .parrafoIndex1{
+            background-color: yellow;
+            grid-area: parrafo-uno;
+        }
+        .imgHome{
+            background-color: skyblue;
+            grid-area: imgHome;
+        }
+        .parrafoIndex2{
+            background-color: violet;
+            grid-area: parrafo-dos;
+        }
+        
+    }
+}
