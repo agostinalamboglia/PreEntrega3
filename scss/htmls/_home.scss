@@ -5,11 +5,11 @@
 .home{
     font-family: 'Comfortaa', cursive, bold;
     color: $color-texto;
-    h1{
+    .indexh1{
         @extend %tituloh1;
         text-align: center;
     }
-    h2{
+    .indexh2{
         @extend %tituloh2;
         font-size: 27px;
         text-align: center;
@@ -41,28 +41,43 @@
 /*MQ de desktop*/
 @media screen and (min-width: 1024px){
     .home{
-        background-color: pink;
+        .indexh1{
+            display: flex;
+            align-items: flex-start;
+            margin-left: 25px;
+            padding: 30px;
+        }
+        .indexh2{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-left: 35px;
+        }
         .contentMainHome{
             display: grid;
-            grid-template-columns: 2fr 1fr ;
-            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            grid-template-columns: 40% 40% ;
+            grid-template-rows: 40% 40%;
             grid-template-areas: 
             "parrafo-uno" "imgHome"
             "parrafo-dos" "parrafo-dos";
             gap: 5px;
         }
-        .parrafoIndex1{
+        .parrafo1 .parrafoIndex1{
             background-color: yellow;
             grid-area: parrafo-uno;
         }
         .imgHome{
-            background-color: skyblue;
             grid-area: imgHome;
+            margin: 0;
+            padding: 0;
         }
-        .parrafoIndex2{
+        .parrafo2 .parrafoIndex2{
             background-color: violet;
             grid-area: parrafo-dos;
         }
-        
     }
 }
+
+    
+

@@ -30,9 +30,11 @@
 /*MQ de desktop*/
 @media screen and (min-width: 1024px){
     .contenedorContactos{
+        display: flex;
+        flex-direction: row;
     
         .medioContacto{
-            display: flex;
+            
             
         }
     }
