@@ -5,6 +5,8 @@
     color: $color-texto;
     .resumeh1{
         @extend %tituloh1;
+        padding: 20px;
+        text-align: center;
     }
     .resumeh2{
         @extend %tituloh2;
@@ -12,7 +14,7 @@
         font-size: 25px;
     }
     .sectionResume{
-        margin: 10px 20px 30px 15px; 
+        margin: 3%;
     }
 }
 
@@ -21,6 +23,21 @@
 /*MQ de desktop*/
 @media screen and (min-width: 1024px){
     .mainResume{
+        .resumeh1{
+            display: flex;
+            align-items: flex-start;
+            margin-left: 40px;
+            padding: 25px;
+        }
+        .sectionResume .resumeh2{
+            display: flex;
+            align-items: flex-start;
+            margin-left: 35px;
+            padding: 25px;
+        }
+        div ul{
+            margin-left: 50px;
+        }
         div ul li{
             font-size: 18px;
         }

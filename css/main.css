@@ -40,7 +40,7 @@ footer {
   width: 100%; }
 
 /*estilos de home*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
   font-weight: bold; }
@@ -112,10 +112,12 @@ footer {
       flex-direction: column;
       align-items: flex-start; }
     .home .contentMainHome .parrafo2 {
-      grid-area: parrafo-dos; } }
+      grid-area: parrafo-dos; }
+  .home .contentMainHome .parrafo1 .parrafoIndex1 {
+    font-size: 20px; } }
 
 /*estilos de about me*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
   font-weight: bold; }
@@ -133,18 +135,25 @@ footer {
 .mainAbout {
   font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
+  .mainAbout .abouth1 {
+    padding: 20px;
+    text-align: center; }
 
 /*MQ de tablet*/
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
+  .mainAbout .abouth1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    padding: 25px; }
   .mainAbout div .aboutP {
-    margin: 15px;
+    margin-left: 40px;
     font-size: 20px;
-    padding: 25px;
     gap: 5px; } }
 
 /*estilos de projects*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
   font-weight: bold; }
@@ -161,8 +170,10 @@ footer {
 
 .mainProjects {
   font-family: 'Comfortaa', cursive, bold;
-  color: #2e3031;
-  margin-bottom: 15%; }
+  color: #2e3031; }
+  .mainProjects .projectsh1 {
+    padding: 20px;
+    text-align: center; }
   .mainProjects .grillaProjects {
     display: flex;
     flex-direction: column; }
@@ -174,24 +185,41 @@ footer {
     margin: 5%;
     border: 2px solid #667474; }
 
+/*MQ de tablet*/
+/*MQ de desktop*/
 /*estilos de resume*/
 .mainResume {
   font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
+  .mainResume .resumeh1 {
+    padding: 20px;
+    text-align: center; }
   .mainResume .resumeh2 {
     text-align: left;
     font-size: 25px; }
   .mainResume .sectionResume {
-    margin: 10px 20px 30px 15px; }
+    margin: 3%; }
 
 /*MQ de tablet*/
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
+  .mainResume .resumeh1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    padding: 25px; }
+  .mainResume .sectionResume .resumeh2 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 35px;
+    padding: 25px; }
+  .mainResume div ul {
+    margin-left: 50px; }
   .mainResume div ul li {
     font-size: 18px; } }
 
 /*estilos de contact*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects div .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
   font-weight: bold; }
@@ -210,6 +238,7 @@ footer {
   font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
   .mainContact .contacth1 {
+    padding: 20px;
     text-align: center; }
   .mainContact .contenedorContactos {
     display: flex;

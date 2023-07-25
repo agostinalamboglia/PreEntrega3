@@ -6,7 +6,8 @@
     color: $color-texto;
     .contacth1{
         @extend %tituloh1;
-        text-align: center
+        padding: 20px;
+        text-align: center;
     }
     .contacth2{
         @extend %tituloh2;

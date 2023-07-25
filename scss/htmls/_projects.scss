@@ -4,9 +4,10 @@
 .mainProjects{
     font-family: 'Comfortaa', cursive, bold;
     color: $color-texto;
-    margin-bottom: 15%;
-    div .projectsh1{
+    .projectsh1{
         @extend %tituloh1;
+        padding: 20px;
+        text-align: center;
     }
     .grillaProjects{
         display: flex;
@@ -22,4 +23,19 @@
         margin: 5%;
         border: 2px solid $color-bordes;
     }
+}
+
+/*MQ de tablet*/
+
+/*MQ de desktop*/
+@media screen and (min-width: 1024px){
+    //.mainProjects{
+        //.projectsh1{
+            //display: flex;
+            //align-items: flex-start;
+            //margin-left: 40px;
+           // padding: 25px;
+           // font-size: ;
+       // }
+  //  }
 }
