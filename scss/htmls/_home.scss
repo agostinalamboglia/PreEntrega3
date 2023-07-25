@@ -1,5 +1,6 @@
 @import "../utilidades/variables";
 @import "../utilidades/extend";
+@import "../utilidades/mixin";
 
 
 .home{
@@ -29,11 +30,9 @@
         padding: 30px;
     }
     .contentMainHome .imgHome{
+        @include flex;
         margin-bottom: 50px;
         height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
         padding: 10%;
     }
 }
