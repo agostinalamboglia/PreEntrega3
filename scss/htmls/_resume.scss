@@ -3,6 +3,9 @@
 .mainResume{
     font-family: 'Comfortaa', cursive, bold;
     color: $color-texto;
+    .sectionResume{
+        margin: 3%;
+    }
     .resumeh1{
         @extend %tituloh1;
         padding: 20px;
@@ -13,12 +16,24 @@
         text-align: left;
         font-size: 25px;
     }
-    .sectionResume{
-        margin: 3%;
-    }
 }
 
 /*MQ de tablet*/
+@media screen and (min-width: 600px){
+    .mainResume{
+        .sectionResume .resumeh2{
+            display: flex;
+            align-items: flex-start;
+            margin-left: 20px;
+        }
+        .sectionResume{
+            margin: 5%;
+        }
+        div ul li{
+            font-size: 18px;
+        }
+    }
+}
 
 /*MQ de desktop*/
 @media screen and (min-width: 1024px){

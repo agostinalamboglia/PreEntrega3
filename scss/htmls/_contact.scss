@@ -27,6 +27,20 @@
 }
 
 /*MQ de tablet*/
+@media screen and (min-width: 600px){
+    .mainContact{
+        .contenedorContactos{
+            margin: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15%;
+        }
+        .contenedorContactos .contactp{
+            font-size: 18px;
+        }
+    }
+}
 
 /*MQ de desktop*/
 @media screen and (min-width: 1024px){

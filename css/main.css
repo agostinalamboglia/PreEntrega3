@@ -84,6 +84,21 @@ footer {
     padding: 10%; }
 
 /*MQ de tablet*/
+@media screen and (min-width: 600px) {
+  .home .contentMainHome {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 35%;
+    grid-template-rows: 40% 40%;
+    row-gap: 10%;
+    grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
+    .home .contentMainHome .parrafo1 {
+      grid-area: parrafo-uno; }
+    .home .contentMainHome .imgHome {
+      grid-area: imgHome; }
+    .home .contentMainHome .parrafo2 {
+      grid-area: parrafo-dos; } }
+
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
   .home .indexh1 {
@@ -140,6 +155,12 @@ footer {
     text-align: center; }
 
 /*MQ de tablet*/
+@media screen and (min-width: 600px) {
+  .mainAbout div {
+    margin: 3%; }
+  .mainAbout div .aboutP {
+    font-size: 18px; } }
+
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
   .mainAbout .abouth1 {
@@ -198,16 +219,26 @@ footer {
 .mainResume {
   font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
+  .mainResume .sectionResume {
+    margin: 3%; }
   .mainResume .resumeh1 {
     padding: 20px;
     text-align: center; }
   .mainResume .resumeh2 {
     text-align: left;
     font-size: 25px; }
-  .mainResume .sectionResume {
-    margin: 3%; }
 
 /*MQ de tablet*/
+@media screen and (min-width: 600px) {
+  .mainResume .sectionResume .resumeh2 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px; }
+  .mainResume .sectionResume {
+    margin: 5%; }
+  .mainResume div ul li {
+    font-size: 18px; } }
+
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
   .mainResume .resumeh1 {
@@ -259,6 +290,16 @@ footer {
     justify-items: center; }
 
 /*MQ de tablet*/
+@media screen and (min-width: 600px) {
+  .mainContact .contenedorContactos {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15%; }
+  .mainContact .contenedorContactos .contactp {
+    font-size: 18px; } }
+
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
   .mainContact .contacth1 {

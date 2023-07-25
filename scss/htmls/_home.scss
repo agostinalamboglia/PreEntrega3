@@ -40,6 +40,27 @@
 
 /*MQ de tablet*/
 @media screen and (min-width: 600px){
+    .home{
+        .contentMainHome{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 50% 35% ;
+            grid-template-rows: 40% 40%;
+            row-gap: 10%;
+            grid-template-areas: 
+            "parrafo-uno imgHome"
+            "parrafo-dos parrafo-dos";
+                .parrafo1{
+                grid-area: parrafo-uno;
+                }            
+                .imgHome{
+                grid-area: imgHome;
+                }
+                .parrafo2{
+                grid-area: parrafo-dos;
+                }
+        }
+    }
 
 }
 /*MQ de desktop*/

@@ -13,10 +13,20 @@
     .aboutP{
         @extend %parrafo-mobile;
     }
-
 }
 
 /*MQ de tablet*/
+@media screen and (min-width: 600px){
+    .mainAbout{
+        div{
+            margin: 3%;
+        }
+    
+        div .aboutP{
+            font-size: 18px;
+        }
+    }
+}
 
 /*MQ de desktop*/
 @media screen and (min-width: 1024px){
