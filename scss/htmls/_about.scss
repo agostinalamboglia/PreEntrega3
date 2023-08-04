@@ -14,33 +14,3 @@
         text-align: center;
     }
 }
-
-/*MQ de tablet*/
-@media screen and (min-width: 600px){
-    .mainAbout{
-        div{
-            margin: 3%;
-        }
-    
-        div .aboutP{
-            font-size: 18px;
-        }
-    }
-}
-
-/*MQ de desktop*/
-@media screen and (min-width: 1024px){
-    .mainAbout{
-        .abouth1{
-            display: flex;
-            align-items: flex-start;
-            margin-left: 40px;
-            padding: 25px;
-        }
-        div .aboutP{
-            margin-left: 40px;
-            font-size: 20px;
-            gap: 5px;
-        }
-    }
-}

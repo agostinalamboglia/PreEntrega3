@@ -81,52 +81,6 @@ footer {
     height: 250px;
     padding: 10%; }
 
-/*MQ de tablet*/
-@media screen and (min-width: 600px) {
-  .home .contentMainHome {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 50% 35%;
-    grid-template-rows: 40% 40%;
-    row-gap: 10%;
-    grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
-    .home .contentMainHome .parrafo1 {
-      grid-area: parrafo-uno; }
-    .home .contentMainHome .imgHome {
-      grid-area: imgHome; }
-    .home .contentMainHome .parrafo2 {
-      grid-area: parrafo-dos; } }
-
-/*MQ de desktop*/
-@media screen and (min-width: 1024px) {
-  .home .indexh1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .home .indexh2 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .home .contentMainHome {
-    margin: 1%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 40% 40%;
-    grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
-    .home .contentMainHome .parrafo1 {
-      grid-area: parrafo-uno;
-      margin-bottom: 25px; }
-    .home .contentMainHome .imgHome {
-      grid-area: imgHome;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
-    .home .contentMainHome .parrafo2 {
-      grid-area: parrafo-dos; } }
-
 /*estilos de about me*/
 .home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
@@ -150,25 +104,6 @@ footer {
     text-align: center; }
   .mainAbout .aboutP {
     text-align: center; }
-
-/*MQ de tablet*/
-@media screen and (min-width: 600px) {
-  .mainAbout div {
-    margin: 3%; }
-  .mainAbout div .aboutP {
-    font-size: 18px; } }
-
-/*MQ de desktop*/
-@media screen and (min-width: 1024px) {
-  .mainAbout .abouth1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .mainAbout div .aboutP {
-    margin-left: 40px;
-    font-size: 20px;
-    gap: 5px; } }
 
 /*estilos de projects*/
 .home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
@@ -202,15 +137,6 @@ footer {
     margin: 5%;
     border: 2px solid #667474; }
 
-/*MQ de tablet*/
-/*MQ de desktop*/
-@media screen and (min-width: 1024px) {
-  .mainProjects .projectsh1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; } }
-
 /*estilos de resume*/
 .mainResume {
   color: #2e3031; }
@@ -222,34 +148,6 @@ footer {
   .mainResume .resumeh2 {
     text-align: left;
     font-size: 25px; }
-
-/*MQ de tablet*/
-@media screen and (min-width: 600px) {
-  .mainResume .sectionResume .resumeh2 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 20px; }
-  .mainResume .sectionResume {
-    margin: 5%; }
-  .mainResume div ul li {
-    font-size: 18px; } }
-
-/*MQ de desktop*/
-@media screen and (min-width: 1024px) {
-  .mainResume .resumeh1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .mainResume .sectionResume .resumeh2 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 35px;
-    padding: 25px; }
-  .mainResume div ul {
-    margin-left: 50px; }
-  .mainResume div ul li {
-    font-size: 18px; } }
 
 /*estilos de contact*/
 .home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
@@ -283,8 +181,39 @@ footer {
     align-items: center;
     justify-items: center; }
 
+/*MQ*/
 /*MQ de tablet*/
 @media screen and (min-width: 600px) {
+  /*home tablet*/
+  .home .contentMainHome {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 35%;
+    grid-template-rows: 40% 40%;
+    row-gap: 10%;
+    grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
+    .home .contentMainHome .parrafo1 {
+      grid-area: parrafo-uno; }
+    .home .contentMainHome .imgHome {
+      grid-area: imgHome; }
+    .home .contentMainHome .parrafo2 {
+      grid-area: parrafo-dos; }
+  /*about me tablet*/
+  .mainAbout div {
+    margin: 3%; }
+  .mainAbout div .aboutP {
+    font-size: 18px; }
+  /*projects tablet*/
+  /*resume tablet*/
+  .mainResume .sectionResume .resumeh2 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px; }
+  .mainResume .sectionResume {
+    margin: 5%; }
+  .mainResume div ul li {
+    font-size: 18px; }
+  /*contact tablet*/
   .mainContact .contenedorContactos {
     margin: 5%;
     display: flex;
@@ -296,6 +225,66 @@ footer {
 
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
+  /*home desktop*/
+  .home .indexh1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    padding: 25px; }
+  .home .indexh2 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    padding: 25px; }
+  .home .contentMainHome {
+    margin: 1%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
+    .home .contentMainHome .parrafo1 {
+      grid-area: parrafo-uno;
+      margin-bottom: 25px; }
+    .home .contentMainHome .imgHome {
+      grid-area: imgHome;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+    .home .contentMainHome .parrafo2 {
+      grid-area: parrafo-dos; }
+  /*about me desktop*/
+  .mainAbout .abouth1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    padding: 25px; }
+  .mainAbout div .aboutP {
+    margin-left: 40px;
+    font-size: 20px;
+    gap: 5px; }
+  /*projects desktop*/
+  .mainProjects .projectsh1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    padding: 25px; }
+  /*resume desktop*/
+  .mainResume .resumeh1 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    padding: 25px; }
+  .mainResume .sectionResume .resumeh2 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 35px;
+    padding: 25px; }
+  .mainResume div ul {
+    margin-left: 50px; }
+  .mainResume div ul li {
+    font-size: 18px; }
+  /*contact desktop*/
   .mainContact .contacth1 {
     display: flex;
     align-items: flex-start;

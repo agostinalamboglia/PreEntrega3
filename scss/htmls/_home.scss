@@ -4,7 +4,6 @@
 
 
 .home{
-    //font-family: 'Raleway', sans-serif;
     color: $color-texto;
     .indexh1{
         @extend %tituloh1;
@@ -34,80 +33,5 @@
         margin-bottom: 50px;
         height: 250px;
         padding: 10%;
-    }
-}
-
-/*MQ de tablet*/
-@media screen and (min-width: 600px){
-    .home{
-        .contentMainHome{
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 50% 35% ;
-            grid-template-rows: 40% 40%;
-            row-gap: 10%;
-            grid-template-areas: 
-            "parrafo-uno imgHome"
-            "parrafo-dos parrafo-dos";
-                .parrafo1{
-                grid-area: parrafo-uno;
-                }            
-                .imgHome{
-                grid-area: imgHome;
-                }
-                .parrafo2{
-                grid-area: parrafo-dos;
-                }
-        }
-    }
-
-}
-/*MQ de desktop*/
-@media screen and (min-width: 1024px){
-    .home{
-        .indexh1{
-            display: flex;
-            align-items: flex-start;
-            // ****** creo que es xq lo estaba viendo desde vision celular
-            //font-size: 70px; ----------->> NO ME DEJA AGRAGAR TAMAÑO LETRA h1
-            margin-left: 40px;
-            padding: 25px;
-        }
-        .indexh2{
-            //font-size: 70px; ----------->> ACA SI ME DEJA
-            display: flex;
-            align-items: flex-start;
-            margin-left: 40px;
-            padding: 25px;
-        }
-        .contentMainHome{
-            margin: 1%;
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 40% 40% ;
-            grid-template-rows: 40% 40%;
-            grid-template-areas: 
-            "parrafo-uno imgHome"
-            "parrafo-dos parrafo-dos";
-                .parrafo1{
-                grid-area: parrafo-uno;
-                margin-bottom: 25px;
-                }            
-                .imgHome{
-                grid-area: imgHome;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                }
-                .parrafo2{
-                grid-area: parrafo-dos;
-                }
-        }
-        .contentMainHome .parrafo1 .parrafoIndex1{
-            // ESTO SI ANDA --->>> font-size: 25px;
-        }
-        .contentMainHome .parrafo1 .parrafoIndex2{
-             // no puedo cambiar font size a parrafo 2 -----------
-        }
     }
 }

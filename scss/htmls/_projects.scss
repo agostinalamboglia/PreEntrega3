@@ -23,19 +23,3 @@
         border: 2px solid $color-bordes;
     }
 }
-
-/*MQ de tablet*/
-@media screen and (min-width: 600px){
-    
-}
-/*MQ de desktop*/
-@media screen and (min-width: 1024px){
-    .mainProjects{
-        .projectsh1{
-            display: flex;
-            align-items: flex-start;
-            margin-left: 40px;
-            padding: 25px;
-        }
-     }
-}
