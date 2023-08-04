@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
 
 /*estilos generales*/
 html {
@@ -12,7 +13,6 @@ header {
   padding: 1px;
   height: 100px;
   background-color: #77885b;
-  font-family: 'Comfortaa', cursive;
   font-size: 7px; }
   header .navbar {
     background-color: #77885b; }
@@ -33,7 +33,6 @@ footer {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  font-family: 'Comfortaa', cursive;
   height: 15px;
   position: fixed;
   bottom: 0px;
@@ -43,7 +42,7 @@ footer {
 .home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: bold; }
+  font-weight: Bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -56,7 +55,6 @@ footer {
   gap: 5px; }
 
 .home {
-  font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
   .home .indexh1 {
     padding: 20px;
@@ -127,15 +125,13 @@ footer {
       flex-direction: column;
       align-items: flex-start; }
     .home .contentMainHome .parrafo2 {
-      grid-area: parrafo-dos; }
-  .home .contentMainHome .parrafo1 .parrafoIndex1 {
-    font-size: 20px; } }
+      grid-area: parrafo-dos; } }
 
 /*estilos de about me*/
 .home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: bold; }
+  font-weight: Bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -148,10 +144,11 @@ footer {
   gap: 5px; }
 
 .mainAbout {
-  font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
   .mainAbout .abouth1 {
     padding: 20px;
+    text-align: center; }
+  .mainAbout .aboutP {
     text-align: center; }
 
 /*MQ de tablet*/
@@ -177,7 +174,7 @@ footer {
 .home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: bold; }
+  font-weight: Bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -190,7 +187,6 @@ footer {
   gap: 5px; }
 
 .mainProjects {
-  font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
   .mainProjects .projectsh1 {
     padding: 20px;
@@ -217,7 +213,6 @@ footer {
 
 /*estilos de resume*/
 .mainResume {
-  font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
   .mainResume .sectionResume {
     margin: 3%; }
@@ -260,7 +255,7 @@ footer {
 .home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: bold; }
+  font-weight: Bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -273,7 +268,6 @@ footer {
   gap: 5px; }
 
 .mainContact {
-  font-family: 'Comfortaa', cursive, bold;
   color: #2e3031; }
   .mainContact .contacth1 {
     padding: 20px;
@@ -282,7 +276,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; }
+    gap: 30px; }
   .mainContact .medioContacto {
     display: flex;
     flex-direction: column;

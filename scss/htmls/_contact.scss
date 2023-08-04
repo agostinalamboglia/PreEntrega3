@@ -2,7 +2,6 @@
 @import "../utilidades/extend";
 
 .mainContact{
-    font-family: 'Comfortaa', cursive, bold;
     color: $color-texto;
     .contacth1{
         @extend %tituloh1;
@@ -16,7 +15,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
     }
     .medioContacto{
         display: flex;
@@ -24,6 +23,10 @@
         align-items: center;
         justify-items: center;
     }
+    // no puedo ponerle espacio(gap) a la img
+    //nav .contenedorContactos .medioContacto .imgContacto{
+    //    gap: 30px;
+    //}
 }
 
 /*MQ de tablet*/

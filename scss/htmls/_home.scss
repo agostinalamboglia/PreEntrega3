@@ -4,7 +4,7 @@
 
 
 .home{
-    font-family: 'Comfortaa', cursive, bold;
+    //font-family: 'Raleway', sans-serif;
     color: $color-texto;
     .indexh1{
         @extend %tituloh1;
@@ -68,10 +68,13 @@
         .indexh1{
             display: flex;
             align-items: flex-start;
+            // ****** creo que es xq lo estaba viendo desde vision celular
+            //font-size: 70px; ----------->> NO ME DEJA AGRAGAR TAMAÑO LETRA h1
             margin-left: 40px;
             padding: 25px;
         }
         .indexh2{
+            //font-size: 70px; ----------->> ACA SI ME DEJA
             display: flex;
             align-items: flex-start;
             margin-left: 40px;
@@ -101,7 +104,10 @@
                 }
         }
         .contentMainHome .parrafo1 .parrafoIndex1{
-            font-size: 20px;
+            // ESTO SI ANDA --->>> font-size: 25px;
+        }
+        .contentMainHome .parrafo1 .parrafoIndex2{
+             // no puedo cambiar font size a parrafo 2 -----------
         }
     }
 }

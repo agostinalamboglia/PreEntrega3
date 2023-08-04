@@ -3,7 +3,6 @@
 @import "../utilidades/mixin";
 
 .mainAbout{
-    font-family: 'Comfortaa', cursive, bold;
     color: $color-texto;
     .abouth1{
         @extend %tituloh1;
@@ -12,6 +11,7 @@
     }
     .aboutP{
         @extend %parrafo-mobile;
+        text-align: center;
     }
 }
 

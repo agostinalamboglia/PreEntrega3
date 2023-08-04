@@ -2,7 +2,6 @@
 @import "../utilidades/extend";
 
 .mainProjects{
-    font-family: 'Comfortaa', cursive, bold;
     color: $color-texto;
     .projectsh1{
         @extend %tituloh1;
