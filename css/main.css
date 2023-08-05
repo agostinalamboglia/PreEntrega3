@@ -135,14 +135,35 @@ footer {
     text-align: center; }
   .mainProjects .grillaProjects {
     display: flex;
-    flex-direction: column; }
-  .mainProjects .contenedorImgProject .imgProjects {
+    flex-direction: column;
+    margin: 10%; }
+    .mainProjects .grillaProjects .descripcionProject {
+      text-align: center;
+      font-weight: bold; }
+  .mainProjects .contenedorImgProject1 .imgProjects {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
-  .mainProjects .contenedorImgProject {
-    margin: 5%;
-    border: 2px solid #667474; }
+    object-fit: fill;
+    margin: 3%;
+    border: 3px solid #77885b; }
+  .mainProjects .contenedorImgProject2 .imgProjects {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin: 3%;
+    border: 3px solid #77885b; }
+  .mainProjects .contenedorImgProject3 .imgProjects {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin: 3%;
+    border: 3px solid #77885b; }
+  .mainProjects .contenedorImgProject4 .imgProjects {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin: 3%;
+    border: 3px solid #77885b; }
 
 /*estilos de resume*/
 .mainResume {
@@ -221,6 +242,13 @@ footer {
   /*projects tablet*/
   .mainProjects {
     margin-top: 20%; }
+    .mainProjects .grillaProjects {
+      display: flex;
+      flex-direction: column; }
+      .mainProjects .grillaProjects .descripcionProject {
+        font-size: 20px; }
+    .mainProjects .contenedorImgProject1, .mainProjects .contenedorImgProject2, .mainProjects .contenedorImgProject3, .mainProjects .contenedorImgProject4 {
+      margin: 3% 0%; }
   /*resume tablet*/
   .mainResume {
     margin-top: 20%; }
@@ -304,6 +332,23 @@ footer {
       align-items: flex-start;
       margin-left: 40px;
       padding: 25px; }
+    .mainProjects .grillaProjects {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "proyecto-uno proyecto-dos" "proyecto-tres proyecto-cuatro"; }
+      .mainProjects .grillaProjects .contenedorImgProject1 {
+        grid-area: proyecto-uno;
+        margin: 3%; }
+      .mainProjects .grillaProjects .contenedorImgProject2 {
+        grid-area: proyecto-dos; }
+      .mainProjects .grillaProjects .contenedorImgProject3 {
+        grid-area: proyecto-tres; }
+      .mainProjects .grillaProjects .contenedorImgProject1 {
+        grid-area: proyecto-cuatro; }
+      .mainProjects .grillaProjects .descripcionProject {
+        font-size: 25px; }
   /*resume desktop*/
   .mainResume {
     margin-top: 10%; }

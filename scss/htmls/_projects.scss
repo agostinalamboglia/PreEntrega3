@@ -11,15 +11,38 @@
     .grillaProjects{
         display: flex;
         flex-direction: column;
+        margin: 10%;
+        .descripcionProject{
+            text-align: center;
+            font-weight: bold;
+        }
     }
-    .contenedorImgProject .imgProjects{
+    .contenedorImgProject1 .imgProjects{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
+        margin: 3%;
+        border: 3px solid $color-headerfooter;
     }
-
-    .contenedorImgProject{
-        margin: 5%;
-        border: 2px solid $color-bordes;
+    .contenedorImgProject2 .imgProjects{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin: 3%;
+        border: 3px solid $color-headerfooter;
+    }
+    .contenedorImgProject3 .imgProjects{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin: 3%;
+        border: 3px solid $color-headerfooter;
+    }
+    .contenedorImgProject4 .imgProjects{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin: 3%;
+        border: 3px solid $color-headerfooter;
     }
 }

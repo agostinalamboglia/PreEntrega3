@@ -43,6 +43,16 @@
     /*projects tablet*/
     .mainProjects{
         margin-top: 20%;
+        .grillaProjects{
+            display: flex;
+            flex-direction: column;
+            .descripcionProject{
+                font-size: 20px;
+            }
+        }
+        .contenedorImgProject1, .contenedorImgProject2, .contenedorImgProject3, .contenedorImgProject4{
+            margin: 3% 0%;
+        }
     }
 
     /*resume tablet*/
@@ -154,6 +164,32 @@
             align-items: flex-start;
             margin-left: 40px;
             padding: 25px;
+        }
+        .grillaProjects{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;//40% 40%
+            grid-template-rows: 1fr 1fr;//40% 40%
+            grid-template-areas:
+            "proyecto-uno proyecto-dos"
+            "proyecto-tres proyecto-cuatro";
+            .contenedorImgProject1{
+                grid-area: proyecto-uno;
+                margin: 3%;
+            }
+            .contenedorImgProject2{
+                grid-area: proyecto-dos;
+            }
+            .contenedorImgProject3{
+                grid-area: proyecto-tres;
+            }
+            .contenedorImgProject1{
+                grid-area: proyecto-cuatro;
+            }
+            .descripcionProject{
+                font-size: 25px;
+            }
+
         }
      }
 
