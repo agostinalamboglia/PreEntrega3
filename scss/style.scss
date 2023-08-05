@@ -13,6 +13,9 @@ html{
     background-color: $color-backgroundbody;
 }
 header{
+    position: fixed;
+    top: 0;
+    width:100%;
     padding: 1px;
     height: 100px;
     background-color: $color-headerfooter;
@@ -34,6 +37,7 @@ header{
 }
 main{
     background-color: $color-backgroundbody;
+    margin-top: 30%;
 }
 footer{
     background-color: $color-headerfooter;

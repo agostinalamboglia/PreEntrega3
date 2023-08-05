@@ -10,6 +10,9 @@ html {
   background-color: #FFF2E0; }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 1px;
   height: 100px;
   background-color: #77885b;
@@ -26,7 +29,8 @@ header {
     color: #FFF2E0; }
 
 main {
-  background-color: #FFF2E0; }
+  background-color: #FFF2E0;
+  margin-top: 30%; }
 
 footer {
   background-color: #77885b;
@@ -39,10 +43,10 @@ footer {
   width: 100%; }
 
 /*estilos de home*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: Bold; }
+  font-weight: bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -57,6 +61,9 @@ footer {
 .home {
   color: #2e3031; }
   .home .indexh1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
     padding: 20px;
     text-align: center; }
   .home .indexh2 {
@@ -82,10 +89,10 @@ footer {
     padding: 10%; }
 
 /*estilos de about me*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: Bold; }
+  font-weight: bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -106,10 +113,10 @@ footer {
     text-align: center; }
 
 /*estilos de projects*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: Bold; }
+  font-weight: bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -150,10 +157,10 @@ footer {
     font-size: 25px; }
 
 /*estilos de contact*/
-.home .indexh1, .mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
+.mainAbout .abouth1, .mainProjects .projectsh1, .mainResume .resumeh1, .mainContact .contacth1 {
   text-align: center;
   font-size: 30px;
-  font-weight: Bold; }
+  font-weight: bold; }
 
 .home .indexh2, .mainResume .resumeh2, .mainContact .contacth2 {
   text-align: center;
@@ -170,6 +177,8 @@ footer {
   .mainContact .contacth1 {
     padding: 20px;
     text-align: center; }
+  .mainContact .contacth2 {
+    margin: 7%; }
   .mainContact .contenedorContactos {
     display: flex;
     flex-direction: column;
@@ -185,116 +194,151 @@ footer {
 /*MQ de tablet*/
 @media screen and (min-width: 600px) {
   /*home tablet*/
-  .home .contentMainHome {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 50% 35%;
-    grid-template-rows: 40% 40%;
-    row-gap: 10%;
-    grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
-    .home .contentMainHome .parrafo1 {
-      grid-area: parrafo-uno; }
-    .home .contentMainHome .imgHome {
-      grid-area: imgHome; }
-    .home .contentMainHome .parrafo2 {
-      grid-area: parrafo-dos; }
+  .home {
+    margin-top: 20%; }
+    .home .contentMainHome .parrafo1 .parrafoIndex1 {
+      font-size: 20px; }
+    .home .contentMainHome .parrafo2 .parrafoIndex2 {
+      font-size: 20px; }
+    .home .contentMainHome {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 50% 35%;
+      grid-template-rows: 40% 40%;
+      row-gap: 10%;
+      grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
+      .home .contentMainHome .parrafo1 {
+        grid-area: parrafo-uno; }
+      .home .contentMainHome .imgHome {
+        grid-area: imgHome; }
+      .home .contentMainHome .parrafo2 {
+        grid-area: parrafo-dos; }
   /*about me tablet*/
-  .mainAbout div {
-    margin: 3%; }
-  .mainAbout div .aboutP {
-    font-size: 18px; }
+  .mainAbout {
+    margin-top: 20%; }
+    .mainAbout div .aboutP {
+      font-size: 20px; }
   /*projects tablet*/
+  .mainProjects {
+    margin-top: 20%; }
   /*resume tablet*/
-  .mainResume .sectionResume .resumeh2 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 20px; }
-  .mainResume .sectionResume {
-    margin: 5%; }
-  .mainResume div ul li {
-    font-size: 18px; }
+  .mainResume {
+    margin-top: 20%; }
+    .mainResume .sectionResume .resumeh2 {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 20px; }
+    .mainResume .sectionResume {
+      margin: 5%; }
+    .mainResume div ul li {
+      font-size: 18px; }
   /*contact tablet*/
-  .mainContact .contenedorContactos {
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15%; }
-  .mainContact .contenedorContactos .contactp {
-    font-size: 18px; } }
+  .mainContact {
+    margin-top: 20%; }
+    .mainContact .contenedorContactos {
+      margin: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .mainContact .contenedorContactos .contactp {
+      font-size: 20px; }
+    .mainContact .contacth2 {
+      margin: 5%; } }
 
 /*MQ de desktop*/
 @media screen and (min-width: 1024px) {
   /*home desktop*/
-  .home .indexh1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .home .indexh2 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .home .contentMainHome {
-    margin: 1%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 40% 40%;
-    grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
-    .home .contentMainHome .parrafo1 {
-      grid-area: parrafo-uno;
-      margin-bottom: 25px; }
-    .home .contentMainHome .imgHome {
-      grid-area: imgHome;
+  .home {
+    margin-top: 10%; }
+    .home .indexh1 {
+      display: flex;
+      align-items: flex-start;
+      font-size: 40px;
+      font-weight: 900;
+      margin-left: 40px;
+      padding: 25px; }
+    .home .indexh2 {
+      font-size: 30px;
+      display: flex;
+      align-items: flex-start;
+      margin-left: 40px;
+      padding: 25px; }
+    .home .contentMainHome {
+      margin: 1%;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 40% 40%;
+      grid-template-rows: 40% 40%;
+      grid-template-areas: "parrafo-uno imgHome" "parrafo-dos parrafo-dos"; }
+      .home .contentMainHome .parrafo1 {
+        grid-area: parrafo-uno;
+        margin-bottom: 25px; }
+      .home .contentMainHome .imgHome {
+        grid-area: imgHome;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+      .home .contentMainHome .parrafo2 {
+        grid-area: parrafo-dos; }
+    .home .contentMainHome .parrafo1 .parrafoIndex1 {
+      font-size: 25px; }
+    .home .contentMainHome .parrafo2 .parrafoIndex2 {
+      font-size: 25px; }
+  /*about me desktop*/
+  .mainAbout {
+    margin-top: 10%; }
+    .mainAbout .abouth1 {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 40px;
+      padding: 25px; }
+    .mainAbout div .aboutP {
+      margin-left: 40px;
+      font-size: 25px;
+      gap: 5px; }
+  /*projects desktop*/
+  .mainProjects {
+    margin-top: 10%; }
+    .mainProjects .projectsh1 {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 40px;
+      padding: 25px; }
+  /*resume desktop*/
+  .mainResume {
+    margin-top: 10%; }
+    .mainResume .resumeh1 {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 40px; }
+    .mainResume .sectionResume .resumeh2 {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 35px; }
+    .mainResume .sectionResume .contenedorExperiencia {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; }
-    .home .contentMainHome .parrafo2 {
-      grid-area: parrafo-dos; }
-  /*about me desktop*/
-  .mainAbout .abouth1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .mainAbout div .aboutP {
-    margin-left: 40px;
-    font-size: 20px;
-    gap: 5px; }
-  /*projects desktop*/
-  .mainProjects .projectsh1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  /*resume desktop*/
-  .mainResume .resumeh1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .mainResume .sectionResume .resumeh2 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 35px;
-    padding: 25px; }
-  .mainResume div ul {
-    margin-left: 50px; }
-  .mainResume div ul li {
-    font-size: 18px; }
+      justify-content: flex-start; }
+    .mainResume div ul {
+      margin-left: 50px; }
+    .mainResume div ul li {
+      font-size: 20px;
+      margin: 1% 0%; }
   /*contact desktop*/
-  .mainContact .contacth1 {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 40px;
-    padding: 25px; }
-  .mainContact .contenedorContactos {
-    margin: 3%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%; }
-  .mainContact .medioContacto {
-    margin: 2%; } }
+  .mainContact {
+    margin-top: 10%; }
+    .mainContact .contacth1 {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 40px;
+      padding: 20px; }
+    .mainContact .contacth2 {
+      margin: 10%; }
+    .mainContact .contenedorContactos {
+      margin: 3%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10%; }
+    .mainContact .medioContacto {
+      margin: 2%; } }

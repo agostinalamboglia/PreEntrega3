@@ -3,6 +3,13 @@
 
     /*home tablet*/
     .home{
+        margin-top: 20%;
+        .contentMainHome .parrafo1 .parrafoIndex1{
+            font-size: 20px;
+        }
+        .contentMainHome .parrafo2 .parrafoIndex2{
+            font-size: 20px;
+        }
         .contentMainHome{
             display: grid;
             justify-content: center;
@@ -26,17 +33,21 @@
 
     /*about me tablet*/
         .mainAbout{
-            div{
-                margin: 3%;
-            }
-        
+            margin-top: 20%;
+            
             div .aboutP{
-                font-size: 18px;
+                font-size: 20px;
             }
         }
+    
     /*projects tablet*/
+    .mainProjects{
+        margin-top: 20%;
+    }
+
     /*resume tablet*/
     .mainResume{
+        margin-top: 20%;
         .sectionResume .resumeh2{
             display: flex;
             align-items: flex-start;
@@ -49,17 +60,21 @@
             font-size: 18px;
         }
     }
+    
     /*contact tablet*/
     .mainContact{
+        margin-top: 20%;
         .contenedorContactos{
             margin: 5%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 15%;
         }
         .contenedorContactos .contactp{
-            font-size: 18px;
+            font-size: 20px;
+        }
+        .contacth2{
+            margin: 5%;
         }
     }
 
@@ -70,16 +85,17 @@
 
     /*home desktop*/
     .home{
+        margin-top: 10%;
         .indexh1{
             display: flex;
             align-items: flex-start;
-            // ****** creo que es xq lo estaba viendo desde vision celular
-            //font-size: 70px; ----------->> NO ME DEJA AGRAGAR TAMAÑO LETRA h1
+            font-size: 40px;
+            font-weight: 900;
             margin-left: 40px;
             padding: 25px;
         }
         .indexh2{
-            //font-size: 70px; ----------->> ACA SI ME DEJA
+            font-size: 30px;
             display: flex;
             align-items: flex-start;
             margin-left: 40px;
@@ -109,14 +125,15 @@
                 }
         }
         .contentMainHome .parrafo1 .parrafoIndex1{
-            // ESTO SI ANDA --->>> font-size: 25px;
+            font-size: 25px;
         }
-        .contentMainHome .parrafo1 .parrafoIndex2{
-             // no puedo cambiar font size a parrafo 2 -----------
+        .contentMainHome .parrafo2 .parrafoIndex2{
+            font-size: 25px;
         }
     }
     /*about me desktop*/
     .mainAbout{
+        margin-top: 10%;
         .abouth1{
             display: flex;
             align-items: flex-start;
@@ -125,12 +142,13 @@
         }
         div .aboutP{
             margin-left: 40px;
-            font-size: 20px;
+            font-size: 25px;
             gap: 5px;
         }
     }
     /*projects desktop*/
     .mainProjects{
+        margin-top: 10%;
         .projectsh1{
             display: flex;
             align-items: flex-start;
@@ -141,32 +159,41 @@
 
     /*resume desktop*/
     .mainResume{
+        margin-top: 10%;
         .resumeh1{
             display: flex;
             align-items: flex-start;
             margin-left: 40px;
-            padding: 25px;
         }
         .sectionResume .resumeh2{
             display: flex;
             align-items: flex-start;
             margin-left: 35px;
-            padding: 25px;
+        }
+        .sectionResume .contenedorExperiencia{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
         div ul{
             margin-left: 50px;
         }
         div ul li{
-            font-size: 18px;
+            font-size: 20px;
+            margin: 1% 0%;
         }
     }
     /*contact desktop*/
     .mainContact{
+        margin-top: 10%;
         .contacth1{
             display: flex;
             align-items: flex-start;
             margin-left: 40px;
-            padding: 25px;
+            padding: 20px;
+        }
+        .contacth2{
+            margin: 10%;
         }
         .contenedorContactos{
             margin: 3%;
